@@ -4,6 +4,11 @@ version.workspace = true
 edition.workspace = true
 authors.workspace = true
 
+[lib]
+name = "jipks_core"
+path = "src/lib.rs"
+crate-type = ["rlib"]
+
 [dependencies]
 rand = "0.10.3"
 pokin = { path = "../../pokin/pokin" }
