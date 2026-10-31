@@ -17,8 +17,5 @@ fn main() {
     }
 
     let output = network.predict(&[1f64, 0f64]);
-    for val in output {
-        print!("{} ", val);
-    }
-    println!();
+    println!("{}", output[0]);
 }
